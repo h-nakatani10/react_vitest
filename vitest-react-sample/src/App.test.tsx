@@ -8,7 +8,7 @@ describe('Simple working test', () => {
 
   test('should render correctly', () => {
     const {container} = render(<App />)
-    expect(container.firstChild)
+    expect(screen.getByText('Vite + React')).toBeInTheDocument();
   })
 
 })

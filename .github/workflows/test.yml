@@ -13,7 +13,7 @@ jobs:
                 node-version: '20.0'
             
             - name: Install dependencies
-              run: npm install
+              run: cd vitest-react-sample && npm install
             
             - name: Run vitest
               run: npm run test
